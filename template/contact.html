@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="language" content="vi">
+    <meta http-equiv="REFRESH" content="1800">
+    <title>Liên hệ</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <meta name="description" content="etoile">
+    <meta name="keywords" content="etoile">
+    <meta property="og:title" content="etoile">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="etoile">
+    <meta property="og:site_name" content="etoile">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header-flex box-wp">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../images/logo etoi 3.png" alt="etoi"></a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="main-menu">
+                        <nav class="navigation">
+                            <ul>
+                                <li><a href="#"><span>mắt</span></a></li>
+                                <li><a href="#"><span>Mũi</span></a></li>
+                                <li><a href="#"><span>Khuôn mặt</span></a></li>
+                                <li><a href="#"><span>Body</span></a></li>
+                                <li><a href="#"><span>Trẻ hoá</span></a></li>
+                                <li><a href="#"><span>Da liễu</span></a></li>
+                                <li><a href="#"><span>Spa</span></a></li>
+                                <li><a href="#"><span>Nha khoa</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <a href="#"><img src="../images/icon-vietnam.png" alt="Vietnam"></a>
+                            <a href="#"><img src="../images/icon-krorea.png" alt="Korea"></a>
+                            <a href="#"><img src="../images/icon-britain.png" alt="Britain"></a>
+                            <a href="#"><img src="../images/icon-china.png" alt="China"></a>
+                        </div>
+                        <div class="bottom">
+                            <div class="contact">
+                                <a href="#">LIÊN HỆ</a>
+                            </div>
+                            <a id="hamburger" href="#menu"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header  -->
+        <style>
+            .contact-wp .time-work,
+            .contact-wp .contact-us {
+                margin: 40px 0;
+            }
+
+            .contact-wp p {
+                font-size: 16px;
+                line-height: 32px;
+                text-transform: capitalize;
+            }
+
+            .contact-wp .time-work {
+                width: 40%;
+                float: left;
+                position: relative;
+            }
+
+            .contact-wp .contact-us {
+                float: right;
+                width: 60%;
+            }
+
+            .time-work .time-work-item {
+                clear: both;
+                float: left;
+            }
+
+            .time-work .time-work-item .day {
+                float: left;
+            }
+
+            .time-work .time-work-item .daytime {
+                margin-left: 150px;
+            }
+
+            .contact-us .form .form-item {
+                float: left;
+                width: 100%;
+                position: relative;
+                margin: 0;
+                padding: 8px 0;
+            }
+
+            .form .form-item input,
+            .form .form-item select,
+            .form .form-item textarea {
+                background-color: #ffffff;
+                border-bottom: 1px solid #DDC2A2;
+                border-radius: 0;
+                font-size: 16px;
+                line-height: 18.77px;
+                padding: 8px 0px;
+            }
+
+            .form .form-item textarea {
+                resize: none;
+            }
+
+            .form .form-item input[type=submit] {
+                background-color: #1f355d;
+                border: none;
+                width: 100%;
+                padding: 10px 15px 8px;
+                display: inline-block;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 300;
+                max-width: 250px;
+                text-transform: uppercase;
+            }
+
+            .form .form-item input[type=submit]:hover,
+            .form .form-item input[type=submit]:focus {
+                background-color: #1f355d;
+            }
+
+            .form .form-item .show-error,
+            .form .form-item label.error {
+                color: #f70626;
+                font-size: 13px;
+                font-weight: 300;
+                font-style: italic;
+                white-space: nowrap;
+            }
+
+            .form-item.it-error input,
+            .form-item.it-error select,
+            .form-item.it-error textarea {
+                border: 1px solid #ff6e69;
+            }
+
+            .form .form-item.form-sm {
+                width: 50%;
+            }
+
+            .form .form-item.form-lg {
+                width: 100%;
+            }
+
+            .form .box-rbtn {
+                padding: 8px 0;
+            }
+
+            .form .box-rbtn .btn:hover {
+                background: #AE7D67;
+            }
+
+            .box-rbtn .btn {
+                padding: 11px 20px 7px;
+                text-transform: uppercase;
+            }
+
+            .box-rbtn .btn+.btn {
+                margin-left: 20px;
+            }
+
+            .box-rbtn .btn.btn-send {
+                background-color: #614A30;
+                border-radius: 100px;
+                border: none;
+                color: #ffffff;
+                font-weight: 400;
+                padding: 20px 90px;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .btn-send span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 40px;
+                line-height: 40px;
+                overflow: hidden;
+            }
+
+            .contact-another {
+                display: flex;
+                justify-content: space-around;
+                padding: 80px 0 0 0;
+            }
+
+            .contact-another h2 {
+                text-align: center;
+            }
+
+            .contact-another .contac-item {
+                width: 368px;
+                height: 160px;
+                border-radius: 10px;
+                background-color: #FAF6F2;
+                text-align: center;
+                align-items: center;
+                padding: 30px 45px;
+                margin: 20px auto;
+            }
+
+            @media screen and (max-width: 1169px) {
+
+                .container .contact-wp,
+                .container .contact-another {
+                    padding: 0 10px;
+                }
+            }
+
+            @media screen and (max-width: 1080px) {}
+
+            @media screen and (max-width: 960px) {}
+
+            @media screen and (max-width: 880px) {
+
+
+
+                .topic .topic-img {
+                    min-height: 180px;
+                }
+
+                .topic .topic-name h2 {
+                    font-size: 36px;
+                    text-align: center;
+                }
+
+                .contact-wp .time-work,
+                .contact-wp .contact-us {
+                    clear: both;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+
+                .contact-another {
+                    display: block;
+                }
+            }
+        </style>
+        <div class="topic box-wp">
+            <img class="topic-img" src="../images/topic.jpg" alt="">
+            <div class="topic-name">
+                <h3>TRANG CHỦ - LIÊN HỆ</h3>
+                <H2>Liên hệ</H2>
+            </div>
+        </div>
+        <section class="container box-wp">
+            <section class="contact-wp">
+                <div class="time-work">
+                    <h2>Giờ hoạt động</h2>
+                    <div class="time-work-item">
+                        <p class="day">Thứ hai</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div class="time-work-item">
+                        <p class="day">Thứ ba</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div class="time-work-item">
+                        <p class="day">Thứ tư</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div class="time-work-item">
+                        <p class="day">Thứ năm</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div class="time-work-item">
+                        <p class="day">Thứ sáu</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div class="time-work-item">
+                        <p class="day">Thứ bảy</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div class="time-work-item">
+                        <p class="day">chủ nhật</p>
+                        <p class="daytime">09:00 - 21:00</p>
+                    </div>
+                    <div style="position: absolute; top: 0; right: 31%;"><img src="../images/bling.jpg" alt=""></div>
+                </div>
+                <div class="contact-us">
+                    <h2>Liên hệ với chúng tôi</h2>
+                    <form id="_contact" name="contact" class="form f-space20" method="post">
+                        <div style="display: flex;">
+                            <div class="form-item form-lg">
+                                <input type="text" name="name" placeholder="TÊN" value="" required maxlength="304">
+                            </div>
+                            <div class="form-item form-lg">
+                                <input type="text" name="tel" placeholder="SỐ ĐIỆN THOẠI" value="" required
+                                    maxlength="304">
+                            </div>
+                        </div>
+                        <div class="form-item form-lg">
+                            <textarea name="content" placeholder="NỘI DUNG" required cols="60" rows="4"></textarea>
+                        </div>
+                        <div class="form-item form-lg box-rbtn">
+                            <button type="submit" class="btn btn-send" name="contact">
+                                <span class="s_submit">Gửi thông tin&nbsp;
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="eto-map">
+                <iframe src="../images/map.jpg" width="100%" height="482" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="contact-another">
+                <div class="contac-item">
+                    <h2>Địa chỉ</h2>
+                    <p>137 P. Nguyễn Văn Trỗi, P. Mộ Lao, Hà Đông, Hà Nội</p>
+                </div>
+                <div class="contac-item" style="border-radius: 100px;">
+                    <h2>Hotline</h2>
+                    <p>0988782832</p>
+                </div>
+                <div class="contac-item">
+                    <h2>Email</h2>
+                    <p>info@etoile.vn</p>
+                </div>
+            </section>
+
+            <section
+                style="background: url('../images/Gradient.jpg');padding: 90px 0; text-align: center; margin: 80px 0 0 0;">
+                <img src="../images/logo etoi 3.png"
+                    alt="“Etoile de Seoul - Thương hiệu được tạo nên từ chất lượng và sự tận tâm”">
+                <p>“Etoile de Seoul - Thương hiệu được tạo nên từ chất lượng và sự tận tâm”</p>
+            </section>
+        </section>
+
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="footer-sitemap">
+                <div class="box-wp">
+                    <div class="ft-col1">
+                        <h3 class="title">LIÊN HỆ</h3>
+                        <p>
+                            <meta charset="utf-8" />137 P. Nguyễn Văn Trỗi, P. Mộ Lao, Hà Đông, Hà Nội<br />
+                            <meta charset="utf-8" />Hotline: 0988782832<br />
+                            Email: info@etoile.vn &nbsp;
+                        </p>
+                    </div>
+                    <div class="ft-col2">
+                        <h3 class="title">LIÊN KẾT NHANH</h3>
+                        <ul class="ft-sitemap clearfix">
+                            <li><a href="./about-us.html">Về chúng tôi</a></li>
+                            <li><a href="./question.html">Câu chuyện của khách hàng</a></li>
+                            <li><a href="./news.html">Tin tức</a></li>
+                            <li><a href="../index.html">Trang chủ</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-col3">
+                        <div class="hotline">
+                            <h3 class="title">TỔNG ĐÀI HỖ TRỢ</h3>
+                            <ul class="social">
+                                <li><a href="tel:0988782832"><i class="fa-sharp fa-solid fa-headset"></i> 0988 782
+                                        832</a></li>
+                            </ul>
+                        </div>
+                        <div class="follow">
+                            <h3 class="title">THEO DÕI CHÚNG TÔI</h3>
+                            <div class="ft-social">
+                                <ul class="social">
+                                    <li class="facebook"><a target="_blank" href="https://www.facebook.com"><i
+                                                class="fa-brands fa-facebook"></i></a></li>
+                                    <li class="instagram"><a target="_blank" href="https://www.instagram.com"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="youtube"><a target="_blank" href="https://www.youtube.com"><i
+                                                class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="twitter"><a target="_blank" href="https://twitter.com"><i
+                                                class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-col4">
+                        <h3 class="title">ĐĂNG KÍ NHẬN TƯ VẤN</h3>
+                        <form action="" style="color: #AE7D67;">
+                            <input style="color: #AE7D67;" type="text" placeholder="Email">
+                            <button><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="box-wp">
+                    <div class="copyright">
+                        <p>
+                            <meta charset="utf-8" />
+                            <meta charset="utf-8" />Copyright © 2023 <strong>EtoiledeSeoul.</strong> All rights
+                            reserved.
+                        </p>
+                    </div>
+                    <div class="dnw">Designed and Maintained by <a target="_blank" href="https://danaweb.vn">
+                            <img style="margin-top: -10px;" src="../images/danaweb.png"></a></div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer  -->
+        <nav id="menu" class="sub-menu">
+            <ul>
+                <li class="selected"><a href="../index.html">Trang chủ</a></li>
+                <li><a href="./about-us.html">Về chúng tôi</a></li>
+                <li><a href="./question.html">Câu chuyện của khách hàng</a></li>
+                <li><a href="./news.html">Tin tức</a></li>
+                <li><a href="./question.html">Câu hỏi thường gặp</a></li>
+                <li><a href="./contact.html">Liên hệ</span></li>
+                <img src="../images/logo etoi 3.png" alt="">
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

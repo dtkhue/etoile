@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background: #5C717F;
+        }
+
+        .direction {
+            text-align: center;
+        }
+
+        .direction button {
+            font-family: cursive;
+            font-weight: bold;
+            background-color: #ffffff44;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: 0.5s;
+            margin: 0 10px;
+        }
+
+        .direction button:hover {
+            background-color: #ffffff;
+        }
+
+        .item {
+            border-radius: 15px;
+            width: 300px;
+            height: 500px;
+            background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 10px;
+            scroll-snap-align: start;
+        }
+
+        .item .avatar {
+            display: block;
+            margin: 50px auto 10px;
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px #7e878d;
+        }
+
+        .item .content {
+            padding: 30px;
+            font-family: monospace;
+        }
+
+        .item .content table td {
+            padding: 10px 0;
+            border-bottom: 1px solid #AEC0CE;
+        }
+
+        .item .content table td:nth-child(2) {
+            text-align: right;
+        }
+
+        .item .nameGroup {
+            text-align: center;
+            border-bottom: none !important;
+        }
+
+        #list {
+            display: flex;
+            width: max-content;
+        }
+
+        #formList {
+            width: 1280px;
+            max-width: 100%;
+            overflow: auto;
+            margin: 100px auto 50px;
+            scroll-behavior: smooth;
+            scroll-snap-type: both;
+        }
+
+        #formList::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .item {
+                width: calc(33.3vw - 20px);
+            }
+
+            .direction {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .item {
+                width: calc(50vw - 20px);
+            }
+
+            .direction {
+                display: none;
+            }
+        }
+    </style>
+    <div id="formList">
+        <div id="list">
+            <div class="item">
+                <img src="Chopper.png" class="avatar">
+                <div class="content">
+                    <table width="100%" cellspacing="0">
+                        <tr>
+                            <td>Tên</td>
+                            <td>Chopper</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Bác sỉ</td>
+                        </tr>
+                        <tr>
+                            <td>Sức mạnh</td>
+                            <td>Cute</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="nameGroup">Thành viên băng Mũ Rơm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Brook.png" class="avatar">
+                <div class="content">
+                    <table width="100%" cellspacing="0">
+                        <tr>
+                            <td>Tên</td>
+                            <td>Brook</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Hải tặc</td>
+                        </tr>
+                        <tr>
+                            <td>Sức mạnh</td>
+                            <td>Bất tử</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="nameGroup">Thành viên băng Mũ Rơm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Sanji.png" class="avatar">
+                <div class="content">
+                    <table width="100%" cellspacing="0">
+                        <tr>
+                            <td>Tên</td>
+                            <td>Sanji</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Đầu bếp</td>
+                        </tr>
+                        <tr>
+                            <td>Sức mạnh</td>
+                            <td>Chân lửa</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="nameGroup">Thành viên băng Mũ Rơm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Usopp.png" class="avatar">
+                <div class="content">
+                    <table width="100%" cellspacing="0">
+                        <tr>
+                            <td>Tên</td>
+                            <td>Usopp</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Xạ thủ</td>
+                        </tr>
+                        <tr>
+                            <td>Sức mạnh</td>
+                            <td>Chém gió</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="nameGroup">Thành viên băng Mũ Rơm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Nami.png" class="avatar">
+                <div class="content">
+                    <table width="100%" cellspacing="0">
+                        <tr>
+                            <td>Tên</td>
+                            <td>Nami</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Hoa tiêu</td>
+                        </tr>
+                        <tr>
+                            <td>Sức mạnh</td>
+                            <td>Ăn hiếp đồng đội</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="nameGroup">Thành viên băng Mũ Rơm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Robin.png" class="avatar">
+                <div class="content">
+                    <table width="100%" cellspacing="0">
+                        <tr>
+                            <td>Tên</td>
+                            <td>Robin</td>
+                        </tr>
+                        <tr>
+                            <td>Nghề nghiệp</td>
+                            <td>Hải tặc</td>
+                        </tr>
+                        <tr>
+                            <td>Sức mạnh</td>
+                            <td>Nghìn tay</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="nameGroup">Thành viên băng Mũ Rơm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="direction">
+        <button id="prev">
+            < </button>
+                <button id="next"> > </button>
+    </div>
+</body>
+<!-- <script>
+    document.getElementById('next').onclick = function () {
+        const widthItem = document.querySelector('.item').offsetWidth;
+        document.getElementById('formList').scrollLeft += widthItem;
+    }
+    document.getElementById('prev').onclick = function () {
+        const widthItem = document.querySelector('.item').offsetWidth;
+        document.getElementById('formList').scrollLeft -= widthItem;
+    }
+</script> -->
+
+</html>

@@ -1,0 +1,291 @@
+h2{
+    text-align: left;
+}
+ul li {
+    padding: 0;
+    margin: 0;
+}
+.topic {
+    position: relative;
+}
+.topic-name {
+    position: absolute;
+    color: #F8FCFD;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.topic-name h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.08px;
+
+}
+.container h2,
+.topic-name h2,
+.sidebar h2,
+.about-award h2,
+.about-doctor h2,
+.content h1
+{
+    font-family: 'SVN-Gallery Modern';
+    font-size: 48px;
+    line-height: 52.8px;
+    font-weight: 400;
+}
+.container-detail{
+    margin: 0 auto;
+}
+.container-detail .content{
+    float: left;
+    padding: 0 20px 0 0;
+    width: 65%;
+}
+.container-detail .sidebar{
+    float: right;
+    padding: 0 0 0 20px;
+    width: 35%;
+}
+
+/* .container{
+    display: flex;
+} */
+.container .content{
+    float: right;
+    width: 67%;
+}
+.container .sidebar{
+    margin-right: 5%;
+    float: left;
+    width: 28%;
+    position: relative;
+}
+
+/* -----------contact------------ */
+
+
+/* -------news-------- */
+ul.list-post {
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-post li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+ul.list-post li .post-thumb {
+    width: 306px;
+}
+
+
+ul.list-post li .more-info {
+    padding: 23px 34px ;
+    width: calc(100% - 306px);
+    background-color: #FAF6F2;
+    max-height: 240px;
+}
+
+ul.list-post li .more-info .post-title {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.15px;
+    display: block;
+    padding-top: 12px;
+}
+
+ul.list-post li:hover .more-info a.post-title,
+ul.list-post li.active .more-info a.post-title {
+    color: #614A30;
+    text-decoration: none;
+}
+
+ul.list-post li .more-info .post-date{
+    color: #614A30;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul.list-post li .more-info .post-excerpt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    padding-top: 8px;
+}
+
+/* ----------------- */
+
+ul.list-nose li{
+    margin: 25px 0 0 0;
+}
+ul.list-nose li .list-number{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #FAF6F2;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px 0 0 ;
+    float: left;
+}
+ul.list-nose li .list-pop{
+    width: 90%;
+}
+
+.sidebar h2{
+    color: #614A30;
+}
+/* --------------------- */
+
+ul.list-question {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.list-question li{
+    padding-top: 30px;
+    text-align: justify;
+}
+ul.list-question li a{
+    color: #333333;
+}
+
+/* ---------- */
+.list-content h2{
+    font-family: 'Work Sans';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    color: #614A30;
+    padding: 0 0 8px 0;
+}
+.list-content p {
+    color: #333333;
+}
+.list-content .item-content{
+    padding: 0 0 50px 0;
+}
+/* .... */
+
+.about-us .about-text {
+    width: 50%;
+    text-align: justify;
+    float: right;
+    margin: 0 8.5% 0 0;
+}
+.about-us .about-text{
+    width: 45%;
+    float: left;
+}
+.about-us .about-text p{
+    padding: 0 0 12px 0;
+}
+.about-us h2{
+    padding: 0 0 24px 0;
+}
+/* ............... */
+
+
+
+/* -------detail1---------- */
+.paper{
+    background: url('../images/Gradient.jpg');
+    position: relative;
+}
+.paper .wp-paper{
+    width: 100%;
+    display: flex;
+}
+
+.paper .wp-paper .slogan{
+    padding: 65px 0 0 0;
+    width: 60%;
+}
+.paper .wp-paper .slogan h2{
+    font-family: 'SVN-Gallery Modern';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+}
+.paper .wp-paper .slogan h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.paper .bg-paper{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* --------support--------- */
+.support{
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    z-index: 1;
+}
+.support .support-item{
+    width: 50px;
+    height: 50px;
+    background-color: #614A30;
+    margin: 12px 0 0  ;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+}
+.support .support-item a{
+    color: #fff;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1169px) {
+
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
+
+@media screen and (max-width: 960px) {
+}
+
+@media screen and (max-width: 880px) {
+    .contact-wp .content{
+    clear: both;
+   }
+   .topic .topic-img{
+    min-height: 180px;
+   }
+   .topic .topic-name h2{
+    font-size: 36px;
+    text-align: center;
+   }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 767px) {
+
+    
+}
+
+@media screen and (min-width: 641px) {}
+
+@media screen and (max-width: 640px) {}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+
+}
+
+@media screen and (max-width: 480px) {}
+

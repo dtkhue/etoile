@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SVN-Gallery Modern';
+    src: url('SVN-GalleryModern.woff2') format('woff2'),
+        url('SVN-GalleryModern.woff') format('woff'),
+        url('SVN-GalleryModern.ttf') format('truetype'),
+        url('SVN-GalleryModern.svg#SVN-GalleryModern') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
